@@ -1,0 +1,91 @@
+﻿import type { Answers } from "./types";
+
+export interface Persona {
+  id: "priya" | "ravi" | "anita";
+  name: string;
+  blurb: string;
+  answers: Answers;
+}
+
+export const PERSONAS: Persona[] = [
+  {
+    id: "priya",
+    name: "Priya, 29 · Bengaluru",
+    blurb: "Salaried MNC, ₹1.1L net, car EMI, 780 score, wants ₹8L personal for a wedding.",
+    answers: {
+      purpose: "wedding",
+      amountWanted: 800_000,
+      productHint: "personal",
+      incomeType: "salaried",
+      monthlyIncome: 110_000,
+      existingEmis: 14_000,
+      householdExpenses: 42_000,
+      age: 29,
+      creditKnowledge: "known",
+      creditScore: 780,
+      yearsEarning: 5,
+      employerTier: "mnc_listed",
+      emergencyMonths: 2,
+      upcomingExpenses: 150_000,
+      cardUtilisation: 15,
+      bouncesLast12m: 0,
+      highCostOutstanding: 0,
+      collateralKind: "none",
+    },
+  },
+  {
+    id: "ravi",
+    name: "Ravi, 42 · Mysuru",
+    blurb: "Kirana 14 years, cash ₹40–80k, ITR ₹4.2L, shop ₹45L clear, no score, wants ₹15L stock + vehicle.",
+    answers: {
+      purpose: "business_stock",
+      amountWanted: 1_500_000,
+      productHint: "business",
+      incomeType: "self_employed",
+      monthlyIncome: 60_000,
+      incomeLow: 40_000,
+      existingEmis: 0,
+      householdExpenses: 28_000,
+      age: 42,
+      creditKnowledge: "never_borrowed",
+      creditScore: null,
+      yearsEarning: 14,
+      documentedAnnualIncome: 420_000,
+      variableIncomeShare: 40,
+      collateralKind: "property",
+      collateralValue: 4_500_000,
+      coApplicantIncome: 18_000,
+      extraMonthlyFromLoan: 12_000,
+      bouncesLast12m: 0,
+      emergencyMonths: 3,
+    },
+  },
+  {
+    id: "anita",
+    name: "Anita, 35 · Hubballi",
+    blurb: "Gig + tailoring ₹26–30k, two children, app loans at 30%+, bounce last month, wants ₹1.5L e-scooter.",
+    answers: {
+      purpose: "vehicle_work",
+      amountWanted: 150_000,
+      productHint: "two_wheeler",
+      incomeType: "informal",
+      monthlyIncome: 28_000,
+      incomeLow: 26_000,
+      existingEmis: 0,
+      householdExpenses: 24_000,
+      age: 35,
+      creditKnowledge: "unknown",
+      creditScore: null,
+      yearsEarning: 3,
+      variableIncomeShare: 50,
+      dependents: 3,
+      bouncesLast12m: 1,
+      emergencyMonths: 0,
+      extraMonthlyFromLoan: 8_000,
+      highCostOutstanding: 35_000,
+      highCostRatePct: 32,
+      coApplicantIncome: 0,
+      collateralKind: "none",
+    },
+  },
+];
