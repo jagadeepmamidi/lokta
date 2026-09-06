@@ -32,7 +32,3 @@ npm run build # production bundle
 | `RULES.md` | What · value · why · source |
 | `RUNTHROUGHS.md` | Priya, Ravi, Anita |
 | `WALKTHROUGH.md` | 5-minute written walkthrough |
-
-## What this is not
-
-Not a credit model, not a sanction, not advice. Bands are wide when you skip. "I don't know my score" is not 300.
